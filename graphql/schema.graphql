@@ -48,3 +48,7 @@ type Mutation {
         name: String
     ): User @update
 }
+
+type Mutation {
+    jdeleteUser(id: ID!): User @delete
+}
