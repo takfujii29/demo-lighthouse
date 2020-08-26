@@ -1,0 +1,23 @@
+type Photo {
+  id: ID!
+  name: String!
+  url: String!
+  description: String
+}
+
+enum PhotoCategory {
+  SELFIE
+  PORTRAIT
+  ACTION
+  LANDSCAPE
+  GRAPHIC
+}
+
+type Photo {
+  id: ID!
+  name: String!
+  url: String!
+  description: String
+  created: DataTime!
+  category: PhotoCategory!
+}
